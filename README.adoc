@@ -1,0 +1,37 @@
+# Gmail Google Apps Script
+
+image:https://img.shields.io/badge/Ninjas-CL-green.svg?style=flat-square[Ninjas.cl]
+image:https://img.shields.io/github/license/ninjascl/gmail-app-script.svg[MIT]
+
+## 🚀 Environment setup
+
+### Requirements
+
+- https://script.google.com/home[Google Apps Script]
+
+### Installation
+
+. Create a new project in _Google Apps Script_.
+. Upload the code inside _action.gs.js_.
+. Enable https://developers.google.com/apps-script/guides/services/advanced#enabling_advanced_services[Advanced Services].
+. Configure _token_, _label_ and _endpoint_ constants.
+. Ensure that some emails have the _label_ and are unread.
+. Save and run (Need to give permissions first).
+
+### Example server
+
+And example server made with https://www.fastify.io/[Fastify] was made
+to demostrate usage. Ensure to configurate the project's tokens and endpoints.
+
+Use `make install` and `make serve` to run.
+
+## 🤔 Project explanation
+
+This is an small proof of concept. A simple gmail script that will fetch
+unread emails with a specific label. Then sent them to an specific server endpoint
+where you can process them further or save them to a database or another
+place.
+
+++++
+Made with <i class="fa fa-heart">&#9829;</i> by <a href="https://ninjas.cl" target="_blank">Ninjas.cl</a>.
+++++
